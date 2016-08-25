@@ -41,7 +41,7 @@
                         orderNo: $('.order-span').text()
                     },
                     success: function (data) {
-                        mui.alert(data.msg, "余额支付");
+                        alert(data.msg, "余额支付");
                         window.location.href = "/Order/List?type=1";
                     },
                     error: function () {

@@ -31,6 +31,8 @@ namespace com.jiechengbao.admin
 
         private void SetupResolveRules(ContainerBuilder builder)
         {
+            builder.RegisterType<AddressBLL>().As<IAddressBLL>();
+            builder.RegisterType<AddressDAL>().As<IAddressDAL>();
             builder.RegisterType<AdminDAL>().As<IAdminDAL>();
             builder.RegisterType<AdminBLL>().As<IAdminBLL>();
             builder.RegisterType<MemberDAL>().As<IMemberDAL>();
